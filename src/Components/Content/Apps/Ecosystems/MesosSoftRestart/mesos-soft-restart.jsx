@@ -6,7 +6,7 @@ import { ReactComponent as MarathonAppIcon } from '../../../../../SvgFiles/marat
 import { ReactComponent as RestartIcon } from '../../../../../SvgFiles/restart_icon.svg';
 
  const MesosSoftRestart = () => {
-    const [menuItem, setMenuItem] = useState({ "host": "ossk-master1", "userName": "ossk", "password": "Risk1234" });
+    const [menuItem, setMenuItem] = useState({ "host": ""});
     const [appList, setAppList] = useState([]);
 
     useEffect(() => {
