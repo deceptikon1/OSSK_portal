@@ -16,13 +16,7 @@ function MenuList() {
     useEffect(() => {
         fetch(mongodb_host + '/api/mongodb/find', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                'uri': "mongodb://ossk-node1:27018/replicaSet%3Dossk_replset?replicaSet=ossk_replset",
-                'database': "osskportal",
-                'collection': "GroupsAndApps",
-                'findQuery': {}
-            })
+            headers: { 'Content-Type': 'application/json' }
         }).then(result => result.json())
             .then(json => DownloadMenu(json))
             .catch(ex => console.log(ex))
