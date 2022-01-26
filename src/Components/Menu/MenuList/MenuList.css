@@ -1,0 +1,125 @@
+ .menuList {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+ .menuItem{
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-rows: 5vh min-content;
+    justify-items: center;
+
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1.5%;
+}
+
+.menuItemTop {
+    background-color: #212121;
+    width: 90%;
+    height: 95%;
+    border-radius: 7px;
+    color: #989898;
+    font-size: 1.1vw;
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+.menuItemTop:hover {
+    background-color: #181818;
+    cursor: pointer;
+    color: #c4c4c4;
+}
+.menuItemTop > div{
+    pointer-events: none;
+}
+.menuItemTop > div:first-child {
+    min-width: 0;
+    min-height: 0;
+    height: 60%;
+    display: grid;
+    justify-items: end;
+}
+.menuItemTop > div:first-child svg {
+    fill: #989898;
+    padding-right: 7px;
+    
+}
+.menuItemTop > div:first-child path {
+    fill: #989898;
+}
+.menuList::-webkit-scrollbar{
+    display: none;
+}
+
+.menuItemSub
+{
+    display: grid;
+    grid-auto-rows: 3.7vh;
+    width: 100%;
+    grid-gap: 0.5vh;
+    justify-items: end;
+    margin-top: 0.1vh;
+    overflow: hidden;
+    transition: all 0.5s linear ;
+    /* height: 0vh; */
+    transition: height 0.2s linear;
+}
+.menuItemSub>div:hover{
+    background-color: #181818;
+    cursor: pointer;
+    color: #c4c4c4;
+}
+.menuItemSub > div {
+    background-color: #212121;
+    border-radius: 7px;
+    width: 80%;
+    margin-right: 5%;
+    overflow: hidden;
+    position: relative;
+
+    font-size: 0.8vw;
+    line-height: 0.7vw;
+    font-weight: 500;
+    color: #989898;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    align-content: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+
+.menuItemSub > div > div:first-child {
+    display: grid;
+    justify-items: end;
+    margin-right: 12%;
+    height: 27%;
+}
+.menuItemSub > div > div:first-child svg {
+    width: auto;
+    height: 100%;
+}
+.menuItem_role{
+    position: absolute;
+    font-size: 0.55vw;
+    right: 2%;
+    bottom: 3%;
+}
